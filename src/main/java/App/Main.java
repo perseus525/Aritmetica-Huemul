@@ -12,8 +12,12 @@ public class Main {
         System.out.println("1.Suma \n2.Multiplicación");
         op=leer.nextInt();
         switch(op){
-            case 1: ej.llenarSuma();break;
-            case 2: ej.llenarMult();break;
+            case 1: ej.llenarSuma();
+                    ej.mostrar();
+                    break;
+            case 2: ej.llenarMult();
+                    ej.mostrar();
+                    break;
         }
     }
 
