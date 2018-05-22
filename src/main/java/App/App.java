@@ -11,7 +11,7 @@ public class App {
 
     }
 
-    public void llenarSuma(int[][] matriz) {
+    public void llenarSuma() {
 
         int llenado;
 
@@ -19,9 +19,27 @@ public class App {
 
         for (int i = 0; i < matriz.length; i++) {
 
-            for (int j = 0; j < matriz.length; i++) {
+            for (int j = 0; j < matriz[i].length; i++) {
 
                 llenado = i + j;
+
+                llenado = revisar(llenado, base);
+
+                matriz[i][j] = llenado;
+            }
+        }
+    }
+
+    public void llenarMult() {
+        int llenado;
+
+        int base = matriz.length;
+
+        for (int i = 0; i < matriz.length; i++) {
+
+            for (int j = 0; j < matriz[i].length; i++) {
+
+                llenado = i * j;
 
                 llenado = revisar(llenado, base);
 
