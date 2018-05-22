@@ -2,8 +2,8 @@ package App;
 
 public class App {
 
-    int tam;
-    int[][] matriz;
+    static int tam;
+    static int[][] matriz;
 
     public App(int tam) {
         this.tam = tam;
@@ -11,7 +11,7 @@ public class App {
 
     }
 
-    public void llenarSuma() {
+    public static void llenarSuma() {
 
         int llenado;
 
@@ -30,7 +30,7 @@ public class App {
         }
     }
 
-    public void llenarMult() {
+    public static void llenarMult() {
         int llenado;
 
         int base = matriz.length;
@@ -48,14 +48,14 @@ public class App {
         }
     }
 
-    public int revisar(int n, int base) {
+    public static int revisar(int n, int base) {
         while (n >= base) {
 
             n = n - base;
         }
         return n;
     }
-    public void mostrar(){
+    public static void mostrar(){
         for(int i=0; i < matriz.length; i++){
             for(int j=0; j < matriz[i].length;j++){
                 System.out.print(matriz[i][j]+"\t");
