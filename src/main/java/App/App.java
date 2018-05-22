@@ -30,6 +30,7 @@ public class App {
         }    
       }
   }  
+  
   public int revisar(int n, int base){
       while( n >= base){
           
