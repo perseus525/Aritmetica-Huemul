@@ -38,7 +38,4 @@ public class App {
       return n;
   }
 
-    
-
-
 }
